@@ -12,6 +12,8 @@ import { CurrentComponent } from './training/current/current.component';
 import { NewTrainingComponent } from './training/new-training/new-training.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RoutingModule } from './app-routing.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,16 +22,18 @@ import { RoutingModule } from './app-routing.module';
     TrainingComponent,
     CurrentComponent,
     NewTrainingComponent,
-    WelcomeComponent
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
     MatSliderModule,
-    RoutingModule
+    RoutingModule,
+    FlexLayoutModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
